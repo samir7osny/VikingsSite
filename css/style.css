@@ -1,0 +1,472 @@
+/* Start Rules */
+body{
+    font-family: 'Skranji', cursive;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.test{
+    background-color: #000;
+    height: 200px;
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+.loading {
+    position: fixed;
+    width: 100%;
+    background-color: #596676;
+    text-align: center;
+    z-index: 200;
+}
+.loading i{
+    color: #DA3139;
+    
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 2000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 2000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-transition: rotate(3600deg);*/
+}
+/* Start Slider */
+.slider{
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 522.4px;
+}
+.slider{
+    margin: 0;
+}
+.slider .notFixed .nav-bar{
+    display: inline-block;
+    padding: 0;
+    margin: 380px 0 60px 60px;
+    background-color: #000;
+    border: 10px inset;
+    border-radius: 50px;
+    font-size: 0;
+    border-right: 4px inset #FFF;
+    border-left: 4px inset #FFF;
+}
+.slider .notFixed .nav-bar span{
+    display: inline-block;
+    font-size: 20px;
+    border-left: 1px solid #9A9A9A;
+    color: #000;
+}
+.slider .notFixed .nav-bar li{
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    color: #FFF;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.slider .notFixed .nav-bar li#active{
+    color: #DA3139;
+}
+.slider .notFixed .nav-bar li:hover{
+    color: #246488;
+}
+/* End Slider */
+.fixed-nav-bar{
+    background-color: #000;
+    width:100%;
+    position: fixed;
+    top:0;
+    opacity: 0.9;
+}
+.fixed-nav-bar .nav-bar{
+    display: inline-block;
+    padding: 0;
+    margin-left: 50px;
+    background-color: #000;
+    border: none;
+    font-size: 0;
+}
+.fixed-nav-bar .nav-bar span{
+    display: inline-block;
+    font-size: 20px;
+    border-left: 1px solid #9A9A9A;
+    color: #000;
+}
+.fixed-nav-bar .nav-bar li{
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    color: #FFF;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.fixed-nav-bar .nav-bar li#active{
+    color: #DA3139;
+}
+.fixed-nav-bar .nav-bar li:hover{
+    color: #246488;
+}
+.fixed-nav-bar img{
+    width:60px;
+    display: inline;
+    margin-left: 800px;
+    margin-bottom: -0px;
+    position: absolute;
+    top: 5px;
+}
+
+
+/* Start Seasons */
+.seasons{
+    background-color: #171717;
+    margin: 0;
+    padding: 110px 0;
+}
+.seasons .season{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 5px;
+}
+.seasons .season .container .header{
+    background-color: #000;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.25s ease-in-out;
+    color: #171717;
+}
+.seasons .season .container .header h1{
+    margin: 0;
+    color: #DA3139;
+    padding: 10px;
+    padding-left: 20px;
+    display: block;
+    float: left;
+    font-size: 2em;
+}
+.seasons .season .container .header i{
+    color: inherit;
+    display: inline-block;
+    float: right;
+    padding: 0.1em;
+    font-size: 3em;
+}
+.seasons .season .container .header i:hover{
+    color: #DA3139;
+}
+.seasons .season .container .header:hover{
+    background-color: #0b0b0b;
+    color: #DA3139;
+    margin-left: -2%;
+    margin-right: -2%;
+}
+.seasons .season .container .episodes{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+.seasons .season .container .episodes .episode{
+    background-color: #0d0d0d;
+    padding: 5px;
+    margin: 2px 20px;
+    transition: all 0.25s ease-in-out;
+    color: #000;
+}
+.seasons .season .container .episodes .episode h3{
+    color: #FFF;
+    text-decoration: none;
+    margin: 0;
+    margin-left: 40px;
+    display: inline-block;
+    font-size: 1.2em;
+}
+.seasons .season .container .episodes .episode a{
+    color: inherit; 
+    display: inline-block; 
+    float: right; 
+    padding-right: 40px;
+}
+.seasons .season .container .episodes .episode a:last-of-type{padding-right: 20px;}
+.seasons .season .container .episodes .episode a i{
+    font-size: 1.1em;
+    color: inherit;
+}
+.seasons .season .container .episodes .episode a i:hover{
+    color: #DA3139;
+}
+.seasons .season .container .episodes .episode:hover{
+    background-color: #000;
+    color: #246488;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/* End Seasons */
+
+/* Start Cast */
+.cast{
+    overflow: hidden;
+    background-color: #000;
+    margin: 0;
+    padding: 110px 0;
+}
+.cast .actor-actress{
+    float: left;
+    width: 48%;
+    margin: 1%;
+    background-color: #171717;
+    overflow: hidden;
+}
+.cast .actor-actress .image-name{
+    text-align: center;
+    float: left;
+}
+.cast .actor-actress h3{
+    float: left;
+    color: #FFF;
+    background: #DA3139;
+    padding: 5px;
+    margin-top: 120px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+.cast .actor-actress .image-name img{
+    display: inline-block;
+    width: 235px;
+    margin: 20px 20px 0 20px;
+}
+.cast .actor-actress .image-name h2{
+    margin: 0 0 20px 0;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-shadow:  2px 2px #DA3139;
+}
+/* End Cast */
+
+/* Start Rate */
+.rate{
+    background-color: #171717;
+    margin: 0;
+    padding: 110px 0;
+}
+.rate .container{
+    overflow: hidden;
+    max-height: 300px;
+}
+.rate .container .a-rate{
+    float: left;
+    width: 31%;
+    margin: 0 1%;
+    text-align: center;
+}
+.rate .container .a-rate .back{
+    height: 20px;
+    background-color: #FFF;
+    border: 10px solid #000;
+}
+.rate .container .a-rate .rate-value{
+    background-color: #DA3139;
+    height: 16px;
+    overflow: hidden;
+    margin: 2px;
+}
+.rate .container .a-rate .rate-value span{
+    color: #FFF;
+    padding: 2px;
+    float: right;
+    font-size: 70%;
+    font-weight: bold;
+}
+.rate .container .a-rate a{
+    margin: 0;
+    padding-top: 1%;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 110%;
+    text-shadow:  2px 2px #DA3139;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+.rate .container .a-rate a:hover{
+    color: #DA3139;
+    text-shadow:  1px 1px #FFF;
+}
+/* End Rate */
+
+/* Start About */
+.about{
+    background-color: #000000;
+    padding: 110px 0;
+}
+.about .container h2{
+    margin: 0 0 20px 0;
+    color: #FFF;
+    text-transform: uppercase;
+    text-shadow:  2px 2px #DA3139;
+}
+.about .container p{
+    color: #FFF;
+    /*text-shadow:  2px 2px #DA3139;*/
+    line-height: 1.2em;
+}
+.about .container p a{
+    color: #FFF;
+    text-shadow:  2px 2px #DA3139;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+.about .container p a:hover{
+    color: transparent;
+    text-shadow:  2px 2px #DA3139;
+}
+/* End About */
+/* Start Footer */
+.footer{
+    overflow: hidden;
+    background-color: #171717;
+    padding: 80px 0;
+}
+.footer .container .about_me{
+    float: left;
+    overflow: hidden;
+    width: 44%;
+}
+.footer .container .about_me .info_me{
+    display: inline-block;
+    padding: 0 0 0 50px;
+    float: left;
+}
+.footer .container .about_me .info_me h2{
+    color: #FFF;
+    text-shadow:  2px 2px #DA3139;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.footer .container .about_me .info_me h3{
+    font-size: 0.9em;
+    margin: 10px 0;
+    color: #FFF;
+}
+.footer .container .about_me .info_me h3 strong{
+    color: #DA3139;
+}
+.footer .container .about_me .info_me h3 p{
+    display: inline;
+}
+.footer .container .img{
+    width: 30%;
+    display: inline-block;
+    vertical-align: text-top;
+    float: left;
+    padding: 2%;
+}
+.footer .container .img img{
+    width: 100%;
+    margin: 0 10px;
+    border: 10px solid #FFF;
+    border-radius: 50%;
+    box-shadow: 8px 8px 8px #DA3139,
+                -8px 8px 8px #DA3139,
+                8px -8px 8px #DA3139,
+                -8px -8px 8px #DA3139;
+    transition: all 0.5s ease-in-out;
+}
+.footer .container .img img:hover{
+    box-shadow: 8px 8px 8px #246488,
+                -8px 8px 8px #246488,
+                8px -8px 8px #246488,
+                -8px -8px 8px #246488;
+}
+.footer .container .form{
+    float: left;
+    margin-left: 1%;
+    width: 44%;
+    padding: 0 5%;
+    border-left: 2px solid #000;
+}
+.footer .container .form h3{
+    color: #FFF;
+    margin: 5px;
+}
+.footer .container .form input[type=text]{
+    width: 80%;
+    border: 5px solid #DA3139;
+    border-radius: 20px;
+    background-color: #676767;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    font-family: inherit;
+    color: #FFF;
+    text-shadow: 1.5px 1.5px 1px #DA3139;
+}
+.footer .container .form textarea{
+    width: 80%;
+    border: 5px solid #DA3139;
+    border-radius: 20px;
+    background-color: #676767;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: inherit;
+    color: #FFF;
+    text-shadow: 1.5px 1.5px 1px #DA3139;
+    min-height: 200px;
+}
+.footer .container .form input.massage{
+    height: 150%;
+}
+.footer .container .form input[type=submit]{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 20px;
+    color: #FFF;
+    cursor: pointer;
+    background-color: #000;
+    border: 10px inset #DA3139;
+    border-radius: 50px;
+    border-right: 4px inset #DA3139;
+    border-left: 4px inset #DA3139;
+    font-family: inherit;
+    text-transform: capitalize;
+    transition: all 0.5s ease-in-out;
+}
+.footer .container .form input[type=submit]:hover{
+    color: #DA3139;
+}
+/* End Footer */
+/* Start Links */
+.links{
+    background-color: #000;
+    padding: 0.5% 0;
+}
+.links .container{text-align: center;}
+.links .container i{
+    color: #717171;
+    font-size: 38px;
+    padding: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.links .container i:hover{
+    color: #DA3139;
+}
+.links .container i:active{
+    color: #246488;
+}
+/* End Links */
